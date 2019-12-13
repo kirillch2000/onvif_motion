@@ -10,7 +10,7 @@ from lxml import etree
 sys.stderr = open('err_log.txt','w')
 
 
-mycam = ONVIFCamera('192.168.98.240', 80, 'admin', 'pznftz1133')  # , no_cache=True)
+mycam = ONVIFCamera('192.168.1.240', 80, 'admin', 'admin')  # , no_cache=True)
 
 #--Get Device Information
 resp = mycam.devicemgmt.GetDeviceInformation()
